@@ -12,6 +12,7 @@ import com.telly.dao.ReserveDao;
 @Service("reserveService")
 public class ReserveService {
 
+
     @Autowired
     private ReserveDao reserveDao;
 
@@ -22,5 +23,8 @@ public class ReserveService {
     public List<Reserve> getReserves(String username){
         return reserveDao.getReserve(username);
     }
+
+
+
 
 }
